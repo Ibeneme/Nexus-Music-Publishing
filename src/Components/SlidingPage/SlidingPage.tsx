@@ -1,6 +1,5 @@
 import React from "react";
 import "./SlidingPage.css";
-import { useTheme } from "../../contexts/ThemeContext";
 
 const slidingText = " Trusted By FilmOne Entertainment | Prime Video | Red Bull Music Library | Premier Music | + more. ";
 
