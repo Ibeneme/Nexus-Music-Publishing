@@ -89,35 +89,35 @@ const Footer: React.FC = () => {
                 <FaFacebook className="social-icon" />
               </a>
               <a
-                href="https://instagram.com/yourpage"
+                href="https://www.instagram.com/nexusmusicpublishing?igsh=MTY3N3VsMHEwOGIwZg=="
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaInstagram className="social-icon" />
               </a>
               <a
-                href="https://twitter.com/yourpage"
+                //href="https://twitter.com/yourpage"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaTwitter className="social-icon" />
               </a>
               <a
-                href="https://linkedin.com/yourpage"
+                //href="https://linkedin.com/yourpage"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaLinkedin className="social-icon" />
               </a>
               <a
-                href="https://wa.me/yourwhatsapplink"
+                //href="https://wa.me/yourwhatsapplink"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaWhatsapp className="social-icon" />
               </a>
               <a
-                href="https://t.me/yourtelegramlink"
+                //href="https://t.me/yourtelegramlink"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -127,9 +127,9 @@ const Footer: React.FC = () => {
             <div className="footer-email">
               <a
                 style={{ color: "#fff" }}
-                href="mailto:contact@nexuspublishing.com"
+                href="mailto:contact@nexusmusicpublishing.com"
               >
-                contact@nexuspublishing.com
+                contact@nexusmusicpublishing.com
               </a>
             </div>
           </div>

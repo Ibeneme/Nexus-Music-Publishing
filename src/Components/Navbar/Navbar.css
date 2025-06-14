@@ -1,5 +1,4 @@
-/* Reset + Base */
-
+/* Base Navbar Styles */
 .navbar {
     width: 100%;
     background-color: #ffffff;
@@ -9,25 +8,25 @@
     align-items: center;
     padding: 12px 20px;
     position: fixed;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    z-index: 8;
-    border-bottom: #66666646 0.5px solid;
-    margin: 0px
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    border-bottom: 0.5px solid #66666646;
 }
 
+/* Logo */
 .logo {
     font-size: 20px;
     font-weight: bold;
 }
 
+/* Navigation Links */
 .nav-links {
     display: flex;
     gap: 25px;
     flex-direction: row;
     align-items: center;
-    justify-content: left;
     font-size: 14px;
 }
 
@@ -38,12 +37,7 @@
     transition: color 0.3s ease;
 }
 
-
-.menu-icon {
-    font-size: 28px;
-    cursor: pointer;
-    display: none;
-    z-index: 110;
+.nav-links a:hover {
     color: var(--primary-color);
 }
 
@@ -51,10 +45,19 @@
     color: var(--primary-color);
 }
 
+/* Hamburger Icon */
+.menu-icon {
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    z-index: 1100;
+    color: var(--primary-color);
+}
 
+/* Mobile Slide-in Animation */
 @keyframes slideIn {
     from {
-        transform: translateX(-100%);
+        transform: translateX(100%);
         opacity: 0;
     }
 
@@ -64,7 +67,7 @@
     }
 }
 
-/* Mobile styles */
+/* Mobile Styles */
 @media screen and (max-width: 768px) {
     .menu-icon {
         display: block;
@@ -74,44 +77,38 @@
         display: none;
     }
 
-    .backdrop {
-        position: fixed;
-        top: 0px;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background-color: #00000045;
-        z-index: 5;
-    }
-
-    .menu-icon .nav-links.active{
-        color: #fff;
-    }
-
     .nav-links.active {
         display: flex;
         flex-direction: column;
-        position: absolute;
-        top: 0px;
+        position: fixed;
+        top: 0;
         right: 0;
         width: 75%;
         height: 100vh;
         background-color: var(--secondary-color);
-        padding: 12px 24px;
+        padding: 120px 24px 24px;
         animation: slideIn 0.3s ease forwards;
-        z-index: 100;
-        padding-top: 120px;
+        z-index: 1000;
         align-items: flex-start;
         justify-content: flex-start;
         color: #fff;
     }
 
-    .nav-links a {
-        margin: 8px 0;
+    .nav-links.active a {
+        margin: 12px 0;
         font-size: 16px;
         text-align: left;
         color: #fff;
     }
 
-
+    /* Optional Backdrop */
+    .backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #00000075;
+        z-index: 900;
+    }
 }

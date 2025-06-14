@@ -11,7 +11,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div style={{ marginTop: 12 }}>
+    <div style={{ marginTop: -12 }}>
       <Slideshow />
     </div>
   );

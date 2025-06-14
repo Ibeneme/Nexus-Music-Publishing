@@ -31,7 +31,7 @@ function App() {
     <Router>
       <ScrollToTop />
       <Navbar />
-      <main>
+ 
         <Routes>
           {/* Public Routes */}
           <Route path="/" element={<Home />} />
@@ -64,7 +64,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
-      </main>
+
     </Router>
   );
 }

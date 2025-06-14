@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-  baseURL: 'http://localhost:3000/api/legal-insights', // Set your base URL here
+  baseURL: `${BASE_URL}/api/nexus-news`
 });
 
 export default axiosInstance;
