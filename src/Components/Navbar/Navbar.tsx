@@ -17,7 +17,7 @@ const Navbar: React.FC = () => {
   }
 
   return (
-    <nav className="navbar" style={{ padding: 16 }}>
+    <nav className="navbar" style={{ padding: 16, position: "fixed" }}>
       {isOpen && <div className="backdrop" onClick={closeNavbar}></div>}
 
       <div className="logo" onClick={() => navigate("/")}>
