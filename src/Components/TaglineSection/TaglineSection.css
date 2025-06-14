@@ -1,0 +1,151 @@
+:root {
+    --primary-color: #ffdb1b;
+}
+
+.tagline-section {
+    background-color: #fdfdfd;
+    color: #111;
+    padding: 120px 16px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+.tagline-header h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.decorated-text {
+    color: var(--primary-color);
+}
+
+.tagline-header p {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 3rem;
+}
+
+.cards-container {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.cards-container-a {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.tagline-card {
+    background-color: #ffffff;
+    border: 0.5px solid #66666632;
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
+    flex: 1 1 250px;
+    max-width: 400px;
+    box-sizing: border-box;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tagline-card:hover {
+    transform: translateY(-4px);
+}
+
+.icon-container {
+    margin-bottom: 1.5rem;
+    color: #fff;
+    background-color: var(--primary-color);
+    padding: 16px;
+    border-radius: 50%;
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tagline-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #222;
+}
+
+.tagline-card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tagline-card {
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .tagline-header h2 {
+        font-size: 1.8rem;
+    }
+
+    .tagline-header p {
+        font-size: 1rem;
+    }
+}
+
+/* Animation helpers */
+.animated-header,
+.animated-description {
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+.animated-header {
+    animation-name: fadeInDown;
+    animation-delay: 0.2s;
+}
+
+.animated-description {
+    animation-name: fadeInUp;
+    animation-delay: 0.6s;
+}
+
+/* Keyframes */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

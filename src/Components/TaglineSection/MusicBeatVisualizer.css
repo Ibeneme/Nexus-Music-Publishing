@@ -1,0 +1,53 @@
+.music-beat-container {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    align-items: flex-end;
+    height: 32px;
+    margin: 12px;
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 64px
+  }
+  
+  .beat-bar {
+    width: 12px;
+    background: var(--primary-color-opacity);
+    border-radius: 4px;
+    animation: pulse 1s infinite ease-in-out;
+    animation-delay: calc(0.1s * var(--i));
+  }
+  
+  /* Animate each bar uniquely using nth-child */
+  .beat-bar:nth-child(odd) {
+    height: 24px;
+    animation: pulse-up 1.2s infinite ease-in-out;
+  }
+  
+  .beat-bar:nth-child(even) {
+    height: 30px;
+    animation: pulse-down 1.2s infinite ease-in-out;
+  }
+  
+  /* Pulse keyframes */
+  @keyframes pulse-up {
+    0%, 100% {
+      transform: scaleY(0.4);
+      background-color: var(--primary-color-opacity);
+    }
+    50% {
+      transform: scaleY(1.4);
+      background-color: var(--primary-color);
+    }
+  }
+  
+  @keyframes pulse-down {
+    0%, 100% {
+      transform: scaleY(1.4);
+      background-color: var(--primary-color-opacity);
+    }
+    50% {
+      transform: scaleY(0.4);
+      background-color: var(--primary-color);
+    }
+  }

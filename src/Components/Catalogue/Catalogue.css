@@ -1,0 +1,102 @@
+.catalogue-section {
+    padding: 120px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.catalogue-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.catalogue-header {
+    align-self: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    display: flex;
+    width: fit-content;
+}
+
+.catalogue-header p {
+    font-size: 1.1rem;
+    color: #121212;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    text-align: left;
+    margin-bottom: 32px;
+    line-height: 1.6;
+}
+
+.decorated-text-b {
+    color: var(--primary-color);
+}
+
+.catalogue-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 30px;
+    justify-content: center;
+}
+
+.catalogue-embed {
+    border-radius: 12px 12px 0px 0px;
+    margin-bottom: 15px;
+}
+
+.catalogue-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.catalogue-card:hover {
+    transform: translateY(-8px);
+}
+
+.catalogue-image {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.catalogue-info {
+    padding: 16px;
+}
+
+.catalogue-info h3 {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.catalogue-info p {
+    font-size: 0.95rem;
+    color: #777;
+    margin: 8px 0 16px;
+}
+
+.catalogue-links a {
+    margin: 0 8px;
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.2s ease;
+}
+
+.catalogue-links .spotify:hover {
+    color: #1db954;
+}
+
+.catalogue-links .apple:hover {
+    color: #000;
+}
+
+@media (max-width: 600px) {
+    .catalogue-header h2 {
+        font-size: 2rem;
+    }
+
+    .catalogue-image {
+        height: 180px;
+    }
+}

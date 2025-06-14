@@ -1,0 +1,49 @@
+.whats-new {
+    padding: 60px 20px;
+    background: #fff;
+    text-align: center;
+    max-width: 1200px;
+}
+
+.header {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.blog-grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.blog-card {
+    cursor: pointer;
+    background: #f9f9f9;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: scale(1.02);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-info {
+    padding: 15px;
+    text-align: left;
+}
+
+.blog-info h3 {
+    margin: 0 0 10px;
+}
+
+.blog-info p {
+    color: #666;
+    font-size: 14px;
+}

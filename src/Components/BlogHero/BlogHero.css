@@ -1,0 +1,54 @@
+.blog-hero {
+  position: relative;
+  background: url('../../assets/songw1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  /* Enables the parallax effect */
+  background-position: center center;
+  /* Moves the image up by 65px */
+  height: 90vh;
+  /* Adjust height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: aquamarine;
+  /* Ensure no overflow issues */
+}
+
+.blog-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.47);
+  /* Semi-transparent overlay */
+}
+
+.blog-hero-title {
+  position: relative;
+  color: white;
+  font-size: 3rem;
+  /* Adjust font size as needed */
+  text-align: center;
+  z-index: 1;
+  font-family: 'Sarina';
+}
+
+@media (max-width: 768px) {
+  .blog-hero {
+    background-attachment: scroll;
+    /* Disable fixed background on mobile */
+    background-position: center top;
+    background-size: 100% auto;
+    /* Ensures width is 100%, auto height */
+    height: 240px;
+    /* Let content define height */
+    margin-top: 58px;
+  }
+
+  .blog-hero-title {
+    font-size: 2rem;
+  }
+}
