@@ -1,7 +1,7 @@
 import React from "react";
 import "./ScrollingCards.css";
 import Gang from "../../assets/movies/gang.jpeg";
-import Book from "../../assets/movies/Book.jpeg";
+import Book from "../../assets/movies/book.jpeg";
 import After from "../../assets/movies/after.jpeg";
 import Brotherhood from "../../assets/movies/brotherhood.jpeg";
 
