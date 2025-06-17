@@ -1,7 +1,7 @@
 .sliding-page {
   background-color: #011404;
   color: #ffd000;
-  height: 20vh;
+  padding: 24px;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -18,21 +18,19 @@
 }
 
 .sliding-text {
-  font-size: 4rem;
+  font-size: 1rem;
   padding-right: 2rem;
   white-space: nowrap;
-  font-family: 'Sarina';
+  font-family: 'axiforma';
 }
 
 /* Smooth mobile adjustments */
 @media (max-width: 768px) {
   .sliding-text {
-    font-size: 4rem;
+    font-size: 2rem;
   }
 
-  .sliding-page {
-    height: 20vh;
-  }
+
 
   .sliding-track {
     display: flex;

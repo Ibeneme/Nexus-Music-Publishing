@@ -2,7 +2,8 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./OurTeam.css";
-import sampleImage from "../../../src/assets/nx.png";
+import sampleImage from "../../../src/assets/eguy.jpg";
+import moteni from "../../../src/assets/moteniola.jpg";
 
 const teamMembers = [
   {
@@ -15,7 +16,7 @@ const teamMembers = [
   {
     name: "Moteniola Akingbade",
     title: "Operations Manager, Nexus Music Publishing Ltd",
-    image: sampleImage,
+    image: moteni,
     bio: `Moteniola Akingbade is the Operations Manager at Nexus Music Publishing Ltd, where she streamlines daily operations and ensures smooth management of music publishing, licensing, and sync processes. With a legal background and a master’s degree in Media and Communication, she advocates for composers' rights and fosters relationships with key stakeholders globally. Fun fact: she loves curating events.`,
   },
 ];

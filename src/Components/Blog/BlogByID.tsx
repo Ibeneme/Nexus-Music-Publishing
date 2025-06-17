@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import {
-  FaTwitter,
-  FaInstagram,
-  FaFacebook,
+  // FaTwitter,
+  // FaInstagram,
+  // FaFacebook,
   FaArrowLeft,
 } from "react-icons/fa";
 import Loader from "../Loader/Loader";
@@ -27,9 +27,9 @@ const BlogDetailPageById: React.FC = () => {
     }
   }, [dispatch, id]);
 
-  const handleShare = (url: string) => {
-    window.open(url, "_blank", "noopener,noreferrer");
-  };
+  // const handleShare = (url: string) => {
+  //   window.open(url, "_blank", "noopener,noreferrer");
+  // };
 
   if (status === "loading") {
     return (
@@ -73,7 +73,7 @@ const BlogDetailPageById: React.FC = () => {
           dangerouslySetInnerHTML={{ __html: insight.description ?? "" }}
         />
       </div>
-      <div className="share-box">
+      {/* <div className="share-box">
         <h2 className="share-title">Share this post</h2>
         <div className="social-icons">
           <div
@@ -113,7 +113,7 @@ const BlogDetailPageById: React.FC = () => {
             <FaFacebook color={`var(--primary-color)`} fontSize={28} />
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

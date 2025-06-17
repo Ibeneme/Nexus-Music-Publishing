@@ -3,11 +3,12 @@
 
 /* Root Variables */
 :root {
-  font-family: 'Mont', sans-serif;
-  --primary-font: 'Mont', sans-serif;
+  font-family: 'axiforma', sans-serif;
+  /* --mont: 'Mont', sans-serif; */
 
   /* --secondary-font: 'Podkova', serif; */
-  --secondary-font: 'Mont', sans-serif;
+  --secondary-font: 'axiforma', sans-serif;
+  --axiforma: 'axiforma', sans-serif;
 
   --bg-color: #ffffff;
   --text-color: #333;
@@ -15,7 +16,7 @@
   --secondary-color: #030542;
   --primary-color-faded: #4657FF21;
   --primary-color-faded-bg: #e4efff;
-  
+
   /* --secondary-color: #311E70; */
 
 }
@@ -56,7 +57,7 @@ h6 {
 
 }
 
-a{
+a {
   margin: 0px;
   padding: 0px
 }

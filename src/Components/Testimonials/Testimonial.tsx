@@ -10,6 +10,25 @@ import "aos/dist/aos.css";
 
 const testimonials = [
   {
+    name: "Graham",
+    role: "Artist",
+    feedback:
+      "One thing I love about Nexus is how hands-on they are. This has allowed me to focus on my music while they handle the administration of my publishing.",
+  },
+  {
+    name: "Tehga",
+    role: "Composer & Writer",
+    feedback:
+      "My experience at Nexus Camp was definitely one for the books. I met many talented writers and composers, and working with them was amazing. It allowed me to be as creative as possible throughout the camp.",
+  },
+  {
+    name: "Drizz SD",
+    role: "Recording Artist",
+    feedback:
+      "Joining Nexus has been a smooth and rewarding experience. Their team is responsive, professional, and genuinely committed to helping artists grow and protect their work.",
+  },
+
+  {
     name: "Tunde Adebayo",
     role: "Afrobeats Producer",
     feedback:
@@ -20,30 +39,6 @@ const testimonials = [
     role: "Film Director",
     feedback:
       "As a filmmaker, I needed a reliable music partner. Nexus delivered every time — no copyright drama, just excellence.",
-  },
-  {
-    name: "Chidi Okonkwo",
-    role: "Songwriter",
-    feedback:
-      "They made sure my royalties were tracked globally. Nexus made me feel like my music mattered.",
-  },
-  {
-    name: "Zainab Yusuf",
-    role: "TV Producer",
-    feedback:
-      "Sync licensing was always a hassle until I found Nexus. They handled our entire soundtrack effortlessly.",
-  },
-  {
-    name: "Emeka Eze",
-    role: "Composer & Sound Engineer",
-    feedback:
-      "I finally found a team that understands metadata and copyright from a Nigerian perspective. Respect!",
-  },
-  {
-    name: "Aisha Suleiman",
-    role: "Legal Consultant",
-    feedback:
-      "Nexus' legal team is solid. They advocate for local creators and know the music industry's legal terrain in and out.",
   },
 ];
 
@@ -67,7 +62,7 @@ const TestimonialsPage = () => {
   return (
     <section className="testimonials-section">
       <div className="testimonials-header">
-        <h2 style={{fontWeight: 700, }}>
+        <h2 style={{ fontWeight: 700 }}>
           Voices from the <span className="decorated-text">Creative Scene</span>
         </h2>
         <p>
@@ -79,11 +74,7 @@ const TestimonialsPage = () => {
       <div className="testimonials-scroll-container" ref={scrollRef}>
         <div className="testimonials-row">
           {testimonials.map((item, i) => (
-            <div
-              key={i}
-              className="testimonial-card"
-              data-aos="fade-up"
-            >
+            <div key={i} className="testimonial-card" data-aos="fade-up">
               <FaQuoteLeft className="quote-icon" />
               <p className="testimonial-text">"{item.feedback}"</p>
               <div className="testimonial-author">

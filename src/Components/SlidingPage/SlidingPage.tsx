@@ -1,7 +1,17 @@
 import React from "react";
 import "./SlidingPage.css";
 
-const slidingText = " Trusted By FilmOne Entertainment | Prime Video | Red Bull Music Library | Premier Music | + more. ";
+const tags = [
+  "Nexus Music Publishing",
+  "Artists",
+  "Songwriters",
+  "Music Producers",
+  "Composers",
+  "Entertainment",
+  "Sound Designers",
+];
+
+const repeatedTags = Array(20).fill(tags).flat(); // Adjust number to control length
 
 const SlidingPage: React.FC = () => {
   return (
@@ -10,8 +20,12 @@ const SlidingPage: React.FC = () => {
       style={{ backgroundColor: `var(--primary-color)`, color: "#fff" }}
     >
       <div className="sliding-track">
-        <span className="sliding-text">{slidingText.repeat(26)}</span>
-        <span className="sliding-text">{slidingText.repeat(26)}</span>
+        {repeatedTags.map((tag, index) => (
+          <span className="sliding-text" key={index}>
+            {tag}
+ 
+          </span>
+        ))}
       </div>
     </div>
   );

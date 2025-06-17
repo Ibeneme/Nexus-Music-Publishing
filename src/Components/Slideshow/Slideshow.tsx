@@ -8,7 +8,9 @@ import { FaInstagram, FaTwitter, FaLink } from "react-icons/fa";
 import sw1 from "../../assets/artists/Tehga.jpg";
 import sw2 from "../../assets/artists/Graham.jpeg";
 import sw3 from "../../assets/artists/Drizz.jpeg";
-import sw4 from "../../assets/artists/Aramide.jpeg";
+import sw4 from "../../assets/aramide.jpg";
+import sw5 from "../../assets/ar.jpg";
+import sw6 from "../../assets/germaine.jpg";
 
 interface Artist {
   name: string;
@@ -39,6 +41,17 @@ const artists: Artist[] = [
     image: sw4,
     instagram: `https://www.instagram.com/aramidemusic?igsh=OHBvZXMydzMwOXR1`,
   },
+
+  {
+    name: "Attifaya",
+    image: sw5,
+    instagram: "https://www.instagram.com/attifayaonline?igsh=MXJjbTByZ2tpamFyMw==",
+  },
+  {
+    name: "Ehl3rs",
+    image: sw6,
+    instagram: `https://www.instagram.com/p/CYM2Mq1LOQe/?img_index=1&igsh=bWkwdGh5b2ZjdGp4`,
+  },
 ];
 
 const Slideshow: React.FC = () => {
@@ -65,7 +78,10 @@ const Slideshow: React.FC = () => {
       <div className="overlay" />
 
       <div className="centered-content">
-        <h1>Nexus Music Publishing</h1>
+        <h1 style={{ fontWeight: "900", fontFamily: "axiformaB" }}>
+          {" "}
+          Nexus Music Publishing
+        </h1>
         <p>The bridge for African composers</p>
       </div>
 

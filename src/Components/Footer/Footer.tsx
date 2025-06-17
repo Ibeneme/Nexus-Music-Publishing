@@ -38,13 +38,14 @@ const Footer: React.FC = () => {
             <h3>Nexus Music Publishing</h3>
             <ul style={{ marginTop: 8, lineHeight: 2, color: "#ffffff90" }}>
               <li>
-                The bridge for African composer: Nexus Music Publishing empowers
-                songwriters and composers by amplifying their music, protecting
-                their rights, and ensuring they earn what they deserve. With
-                personalized, hands-on support—from creative collaboration to
-                publishing and admin they help artists grow and build lasting
-                legacies. At Nexus, your sound is your power, and their mission
-                is to make the world listen.
+                The bridge for the African composer: Nexus Music Publishing
+                empowers songwriters and composers by amplifying their music,
+                protecting their rights, and ensuring they earn what they
+                deserve. With personalized hands-on support, from creative
+                collaboration to publishing and administration, we{" "}
+                <strong></strong> help artists grow and build lasting legacies.
+                At nexus, your sound is your power and *our* mission is to make
+                the world listen.
               </li>
             </ul>
           </div>

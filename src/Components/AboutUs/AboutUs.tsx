@@ -19,8 +19,8 @@ const AboutUs: React.FC<AboutUsProps> = () => {
       <br /> <br />
       {/* WHO WE ARE */}
       <div
-        className="catalogue-header"
-        style={{ maxWidth: 900 }}
+        className=""
+        style={{ maxWidth: 900 , }}
         data-aos="fade-up"
       >
        <h2 style={{fontWeight: 700, }}>

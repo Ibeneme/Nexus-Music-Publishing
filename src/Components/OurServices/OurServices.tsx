@@ -99,7 +99,7 @@ const OurServices = () => {
 
   return (
     <section className="our-services-page" data-aos="fade-up">
-      <div className="intro" data-aos="fade-up">
+      <div className="intro" data-aos="fade-up" >
       <h1 style={{fontWeight: 700, }}>Our Services</h1>
         <p>
           At <strong>Nexus Music Publishing</strong>, we do more than manage

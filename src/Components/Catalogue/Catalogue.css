@@ -1,31 +1,35 @@
 .catalogue-section {
     padding: 120px 20px;
-    background-color: #f9f9f9;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.catalogue-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 120px;
+    margin-bottom: 40px;
     text-align: center;
 }
 
 .catalogue-header h2 {
-    font-size: 2.5rem;
+    font-size: 4.5rem;
     margin-bottom: 10px;
-    text-align: left;
-}
-
-.catalogue-header {
-    align-self: flex-start;
-    flex-direction: column;
-    justify-content: flex-start;
-    display: flex;
-    width: fit-content;
 }
 
 .catalogue-header p {
     font-size: 1.1rem;
     color: #121212;
     max-width: 700px;
-    margin: 0 auto 40px;
-    text-align: left;
     margin-bottom: 32px;
     line-height: 1.6;
+    text-align: center;
 }
 
 .decorated-text-b {
@@ -37,11 +41,9 @@
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
     gap: 30px;
     justify-content: center;
-}
-
-.catalogue-embed {
-    border-radius: 12px 12px 0px 0px;
-    margin-bottom: 15px;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: -48px;
 }
 
 .catalogue-card {
@@ -49,6 +51,7 @@
     border-radius: 12px;
     overflow: hidden;
     transition: transform 0.3s ease;
+    text-align: left;
 }
 
 .catalogue-card:hover {
@@ -74,6 +77,11 @@
     font-size: 0.95rem;
     color: #777;
     margin: 8px 0 16px;
+}
+
+.catalogue-links {
+    display: flex;
+    justify-content: center;
 }
 
 .catalogue-links a {
