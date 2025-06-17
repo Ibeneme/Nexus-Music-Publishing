@@ -111,6 +111,7 @@
 
     .slideshow {
         background-size: cover;
+        height: 90vh;
     }
 
     .centered-content h1 {
