@@ -78,7 +78,7 @@ const Slideshow: React.FC = () => {
       <div className="overlay" />
 
       <div className="centered-content">
-        <h1 style={{ fontWeight: "900", fontFamily: "axiformaB" }}>
+        <h1 style={{ fontWeight: "900", fontFamily: "var(--mont)" }}>
           {" "}
           Nexus Music Publishing
         </h1>
