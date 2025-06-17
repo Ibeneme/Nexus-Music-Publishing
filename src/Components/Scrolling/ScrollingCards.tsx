@@ -6,7 +6,7 @@ import After from "../../assets/movies/after.jpeg";
 import Brotherhood from "../../assets/movies/brotherhood.jpeg";
 
 // Only Christmas has WebP
-import ChristmasWebp from "../../assets/movies/Christmas.webp";
+import ChristmasWebp from "../../assets/movies/christmas.webp";
 
 const cardsData = [
   {
