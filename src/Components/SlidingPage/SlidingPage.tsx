@@ -3,7 +3,6 @@ import "./SlidingPage.css";
 
 const tags = [
   "Nexus Music Publishing",
-  "Artists",
   "Songwriters",
   "Music Producers",
   "Composers",

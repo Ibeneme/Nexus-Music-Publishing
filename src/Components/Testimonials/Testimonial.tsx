@@ -11,21 +11,21 @@ import "aos/dist/aos.css";
 const testimonials = [
   {
     name: "Graham",
-    role: "Artist",
+    role: "Songwriter",
     feedback:
       "One thing I love about Nexus is how hands-on they are. This has allowed me to focus on my music while they handle the administration of my publishing.",
   },
   {
     name: "Tehga",
-    role: "Composer & Writer",
+    role: "Songwriter",
     feedback:
       "My experience at Nexus Camp was definitely one for the books. I met many talented writers and composers, and working with them was amazing. It allowed me to be as creative as possible throughout the camp.",
   },
   {
     name: "Drizz SD",
-    role: "Recording Artist",
+    role: "Composers",
     feedback:
-      "Joining Nexus has been a smooth and rewarding experience. Their team is responsive, professional, and genuinely committed to helping artists grow and protect their work.",
+      "Joining Nexus has been a smooth and rewarding experience. Their team is responsive, professional, and genuinely committed to helping Composerss grow and protect their work.",
   },
 
   {
@@ -66,7 +66,7 @@ const TestimonialsPage = () => {
           Voices from the <span className="decorated-text">Creative Scene</span>
         </h2>
         <p>
-          Hear from Nigerian producers, composers, and filmmakers who trust
+          Hear from composers who trust
           Nexus with their music rights and royalties.
         </p>
       </div>
