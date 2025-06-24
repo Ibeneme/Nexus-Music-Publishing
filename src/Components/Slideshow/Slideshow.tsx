@@ -45,7 +45,8 @@ const artists: Artist[] = [
   {
     name: "Attifaya",
     image: sw5,
-    instagram: "https://www.instagram.com/attifayaonline?igsh=MXJjbTByZ2tpamFyMw==",
+    instagram:
+      "https://www.instagram.com/attifayaonline?igsh=MXJjbTByZ2tpamFyMw==",
   },
   {
     name: "Ehl3rs",
@@ -82,7 +83,7 @@ const Slideshow: React.FC = () => {
           {" "}
           Nexus Music Publishing
         </h1>
-        <p>The bridge for African composers</p>
+        <p style={{ fontStyle: "italic" }}>The bridge for African composers</p>
       </div>
 
       <div className="artist-info">
