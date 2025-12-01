@@ -23,7 +23,7 @@ const CenteredTextSection: React.FC = () => {
       </p>
 
       <a
-        href="mailto:nexusmusicpublishing@gmail.com"
+        href="mailto:contact@nexusmusicpublishing.com"
         className="cta-button"
         data-aos="fade-up"
         data-aos-delay="200"
