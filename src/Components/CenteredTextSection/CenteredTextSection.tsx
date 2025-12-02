@@ -11,7 +11,7 @@ const CenteredTextSection: React.FC = () => {
   return (
     <section
       className="centered-text-section"
-      style={{ backgroundColor:`var(--primary-color-faded-bg)` }}
+      style={{ backgroundColor: `var(--primary-color-faded-bg)` }}
     >
       <h3 className="section-header" data-aos="fade-up">
         Contact Us
@@ -23,7 +23,7 @@ const CenteredTextSection: React.FC = () => {
       </p>
 
       <a
-        href="mailto:contact@nexusmusicpublishing.com"
+        href="mailto:contact@nexusmusicpublishing.com?subject=Inquiry%20from%20Website"
         className="cta-button"
         data-aos="fade-up"
         data-aos-delay="200"
@@ -34,6 +34,7 @@ const CenteredTextSection: React.FC = () => {
           color: "#fff",
           borderRadius: 488,
           marginTop: 24,
+          display: "inline-block",
         }}
       >
         Contact Us
