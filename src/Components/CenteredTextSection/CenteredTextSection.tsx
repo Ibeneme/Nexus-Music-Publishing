@@ -22,6 +22,7 @@ const CenteredTextSection: React.FC = () => {
         composers. We are here to build bridges for breakthrough.
       </p>
 
+      {/* Updated mailto address */}
       <a
         href="mailto:contact@nexusmusicpublishing.com?subject=Inquiry%20from%20Website"
         className="cta-button"
